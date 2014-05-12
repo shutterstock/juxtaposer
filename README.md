@@ -17,7 +17,7 @@ Flexible image comparison tool primarily used to detect css changes.
 
 `npm install --save-dev juxtaposer`
 
-When installed for a single project, the binary is `./node_module/.bin/jux`
+When installed for a single project, the binary is `./node_module/.bin/juxtaposer`
 
 
 ## Getting Started
@@ -59,7 +59,7 @@ Specify the targets:
 ]
 ```
 
-When you run the command `$ jux`, it will store the url `http://www.example.com/login` at `my_images/baselines/photo_homepage.png` and the url `http://testing.development.example.com/login` at `my_images/samples/photo_homepage.png` and then the two images are compared.
+When you run the command `$ juxtaposer`, it will store the url `http://www.example.com/login` at `my_images/baselines/photo_homepage.png` and the url `http://testing.development.example.com/login` at `my_images/samples/photo_homepage.png` and then the two images are compared.
 
 
 ### advanced example
