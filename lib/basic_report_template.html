@@ -1,0 +1,245 @@
+<html>
+  <head>
+    <style>
+      body {
+        margin: 0;
+        background-color: #FFF;
+        font-family: "Helvetica", sans-serif;
+      }
+      .container {
+        text-align: center;
+        color: #000;
+      }
+      .imageBox {
+        display: inline-block;
+        padding: 10px;
+        margin: 10px;
+        text-align: center;
+      }
+      .imageBox img {
+        max-width: 500px;
+        max-height: 700px;
+        box-shadow: 0px 0px 15px #aaa ;
+      }
+
+      table {
+        text-align: center;
+        width: 100%;
+        margin: 0px auto;
+        border-spacing: 0px;
+        color: #000;
+      }
+      table tr:hover {
+        background-color: #F6F7F6;
+      }
+      table a {
+        text-decoration: none;
+        display: block;
+        color: #000;
+        padding: 5px;
+      }
+
+      td.key {
+        font-weight: bold;
+        text-align: right;
+      }
+      td.value {
+        text-align: left;
+        font-family: monospace;
+        border-left: thin #1693A7 solid;
+      }
+      table.settings td {
+        border-top: thin #1693A7 solid;
+        padding: 5px;
+      }
+      table.settings {
+        border-left: 50px #1693A7 solid;
+      }
+
+      table.success td {
+        border-top: thin #71D845 solid;
+      }
+      table.success {
+        border-left: 50px #71D845 solid;
+      }
+
+      table.skipped td {
+        border-top: thin #E6781E solid;
+      }
+      table.skipped {
+        border-left: 50px #E6781E solid;
+      }
+
+      table.failed td {
+        border-top: thin #CC0C39 solid;
+      }
+      table.failed {
+        border-left: 50px #CC0C39 solid;
+      }
+
+
+      h1 {
+        margin: 75px 0 0;
+        padding: 15px;
+      }
+      h1.failed {
+        border-top: 5px #CC0C39 solid;
+        border-left: 50px #CC0C39 solid;
+      }
+      h1.success {
+        border-top: 5px #71D845 solid;
+        border-left: 50px #71D845 solid;
+      }
+
+      h3.header {
+        text-shadow: #000 0px 0px 1px;
+        color: #fff;
+        padding: 10px;
+        margin: 50px 0 0;
+      }
+
+      h3.settings {
+        border-top: 5px #1693A7 solid;
+        border-left: 52px #1693A7 solid;
+        padding: 10px;
+        margin: 0;
+        background-color: #1693A7;
+      }
+
+      h3.success {
+        border-top: 5px #71D845 solid;
+        border-left: 52px #71D845 solid;
+        background-color: #71D845;
+      }
+
+      h3.skipped {
+        border-top: 5px #E6781E solid;
+        border-left: 52px #E6781E solid;
+        background-color: #E6781E;
+      }
+
+      h3.failed {
+        border-top: 5px #CC0C39 solid;
+        border-left: 52px #CC0C39 solid;
+        background-color: #CC0C39;
+      }
+
+    </style>
+  </head>
+  <body>
+  <div class='container'>
+  <div class="summary">
+    <h3 class="settings header">Settings</h3>
+    <table class="settings">
+      {% for setting in settings %}
+        <tr class="settings">
+          <td class="key">
+          {{loop.key}}
+          </td>
+          <td class="value">
+          {{setting}}
+          </td>
+        </tr>
+      {% endfor %}
+    </table>
+    <a name="success"></a>
+
+    <h3 class="success header">Successful: {{tests.success.length || 0}}</h3>
+    <table class="success">
+      {% for test in tests.success %}
+        <tr class="success">
+          <td>
+          <a href="#{{test.imageName}}">{{test.prettyName}}</a>
+          </td>
+        </tr>
+      {% endfor %}
+    </table>
+
+    <a name="skipped"></a>
+    <h3 class="skipped header">Skipped: {{tests.skipped.length || 0}}</h3>
+    <table class="skipped">
+      {% for test in tests.skipped %}
+        <tr class="skipped">
+          <td>
+          <a href="#skipped">{{test.prettyName}}</a>
+          </td>
+        </tr>
+      {% endfor %}
+    </table>
+
+
+    <h3 class="failed header">Failed: {{tests.failed.length || 0}}</h3>
+    <table class="failed">
+      {% for test in tests.failed %}
+        <tr class="failed">
+          <td>
+          <a href="#{{test.imageName}}">{{test.prettyName}}</a>
+          </td>
+        </tr>
+      {% endfor %}
+    </table>
+
+  </div>
+
+
+
+
+  {% for test in tests.success %}
+    <div class="test">
+      <a name="{{test.imageName}}"></a>
+      <h1 class="success">{{test.prettyName}}</h1>
+      <div class="imageBox">
+        <a href="{{test.baselinePath}}" target="_blank">
+          <img src="{{test.baselinePath }}"/>
+        </a>
+        <h3>Baseline</h3>
+      </div>
+    </div>
+  {% endfor %}
+
+  {% for test in tests.failed %}
+    <div class="test">
+      <a name="{{test.imageName}}"></a>
+      <h1 class="failed">{{test.prettyName}}</h1>
+      <div class="imageBox">
+        <a href="{{test.baselinePath}}" target="_blank">
+          <img src="{{test.baselinePath }}"/>
+        </a>
+
+        <h3>Baseline</h3>
+      </div>
+      <div class="imageBox">
+        <a href="{{test.samplePath}}" target="_blank">
+          <img src="{{test.samplePath }}"/>
+        </a>
+        <h3>Sample</h3>
+      </div>
+      <div class="imageBox">
+        <a href="{{test.changesImage}}" target="_blank">
+          <img src="{{test.changesImage }}"/>
+        </a>
+        <h3>Changes</h3>
+      </div>
+      <div class="imageBox">
+        <a href="{{test.animateImage}}" target="_blank">
+          <img src="{{test.animateImage }}"/>
+        </a>
+        <h3>Animated</h3>
+      </div>
+      <div class="imageBox">
+        <a href="{{test.compositeImage}}" target="_blank">
+          <img src="{{test.compositeImage }}"/>
+        </a>
+        <h3>Composite</h3>
+      </div>
+      <div class="imageBox">
+        <a href="{{test.diffsPath}}" target="_blank">
+          <img src="{{test.diffsPath }}"/>
+        </a>
+        <h3>Diff</h3>
+      </div>
+    </div>
+  {% endfor %}
+  </div>
+  </body>
+</html>
