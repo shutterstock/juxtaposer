@@ -22,13 +22,45 @@ When installed for a single project, the binary is `./node_module/.bin/juxtapose
 
 ## Getting Started
 
-*TODO*
+**Step 1** Make a file in the root of your project called `juxtaposer.json` with the contents:
+
+```json
+{
+  "imagesDir": "test_images",
+  "substitutions": {
+    "prod": {
+      "query": "production"
+    },
+    "dev": {
+      "query": "development",
+    }
+  }
+}
+```
+
+**Step 2** Make a file in the root of your project called `targets.json` with the contents:
+
+```json
+#### targets.json
+```json
+[
+  {
+    "name": "sample_query.png",
+    "url": "https://www.google.com/#q={{query}}",
+  }
+]
+```
+
+**Step 3** Run `juxtaposer --report`
+
+
+**Step 4** Customize `juxtaposer.json` and `targets.json`
 
 ## Examples
 
 ### Basic Example
 
-Create your config file: 
+Create your config file:
 
 #### juxtaposer.json
 ```json
