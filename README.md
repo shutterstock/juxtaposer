@@ -1,5 +1,6 @@
 [![Code Climate](https://codeclimate.com/github/shutterstock/juxtaposer.png)](https://codeclimate.com/github/shutterstock/juxtaposer)
-
+[![Dependency Status](https://david-dm.org/shutterstock/juxtaposer.png)](https://david-dm.org/shutterstock/juxtaposer)
+[![devDependency Status](https://david-dm.org/shutterstock/juxtaposer/dev-status.png)](https://david-dm.org/shutterstock/juxtaposer#info=devDependencies)
 [![Stories in Ready](https://badge.waffle.io/shutterstock/juxtaposer.png?label=ready&title=Ready)](https://waffle.io/shutterstock/juxtaposer)
 
 
