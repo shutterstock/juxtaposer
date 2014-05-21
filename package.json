@@ -1,11 +1,11 @@
 {
   "name": "juxtaposer",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
- "repository": {
+  "repository": {
     "type": "git",
     "url": "https://github.com/shutterstock/juxtaposer.git"
   },
@@ -16,7 +16,7 @@
   "dependencies": {
     "progress": "^1.1.5",
     "colors": "^0.6.2",
-    "async": "^0.7.0",
+    "async": "^0.8.0",
     "lodash": "^2.4.1",
     "nopt": "^2.2.0",
     "glob": "^3.2.9",
