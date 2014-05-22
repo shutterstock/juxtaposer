@@ -1,7 +1,8 @@
 [![Code Climate](https://codeclimate.com/github/shutterstock/juxtaposer.png)](https://codeclimate.com/github/shutterstock/juxtaposer)
 [![Dependency Status](https://david-dm.org/shutterstock/juxtaposer.png)](https://david-dm.org/shutterstock/juxtaposer)
 [![devDependency Status](https://david-dm.org/shutterstock/juxtaposer/dev-status.png)](https://david-dm.org/shutterstock/juxtaposer#info=devDependencies)
-[![Stories in Ready](https://badge.waffle.io/shutterstock/juxtaposer.png?label=ready&title=Ready)](https://waffle.io/shutterstock/juxtaposer)
+[![Stories pending](https://badge.waffle.io/shutterstock/juxtaposer.png?label=pending&title=Stories%20Pending)](https://waffle.io/shutterstock/juxtaposer)
+[![Stories in progress](https://badge.waffle.io/shutterstock/juxtaposer.png?label=in_progress&title=Stories%20In%20Progress)](https://waffle.io/shutterstock/juxtaposer)
 
 
 # juxtaposer
