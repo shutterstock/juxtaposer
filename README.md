@@ -8,7 +8,7 @@
 
 ## Summary
 
-Flexible image comparison tool primarily used to detect css changes.
+Screen shot capture and comparison tool for testing website changes.
 
 ## Installation
 

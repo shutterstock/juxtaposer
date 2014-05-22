@@ -1,7 +1,7 @@
 {
   "name": "juxtaposer",
   "version": "0.0.4",
-  "description": "",
+  "description": "Screen shot capture and comparison tool for testing website changes.",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
