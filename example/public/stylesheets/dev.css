@@ -1,0 +1,18 @@
+#main-content { 
+  margin-top: 60px;
+}
+
+.small_changes { 
+  text-align: center;
+}
+
+.small_changes .color_changes { 
+  color: #111111;
+}
+.small_changes .alignment { 
+  padding-left: 1px;
+}
+.small_changes .border_changes { 
+  min-height: 80px;
+  border: 11px solid #AAA;
+}

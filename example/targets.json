@@ -1,0 +1,56 @@
+[
+  {
+    "name": "homepage.png",
+    "url": "http://localhost:3000/{{env}}/index"
+  },
+  {
+    "name": "homepage_iphone.png",
+    "url": "http://localhost:3000/{{env}}/index",
+    "width": 320,
+    "height": 480
+  },
+  {
+    "name": "homepage_iphone_landscape.png",
+    "url": "http://localhost:3000/{{env}}/index",
+    "width": 480,
+    "height": 320
+  },
+  {
+    "name": "only_the_nav_bar.png",
+    "url": "http://localhost:3000/{{env}}/index",
+    "only": ".navbar"
+  },
+  {
+    "name": "only_the_nav_bar_iphone.png",
+    "url": "http://localhost:3000/{{env}}/index",
+    "only": ".navbar",
+    "width": 320,
+    "height": 480
+  },
+  {
+    "name": "small_changes.png",
+    "url": "http://localhost:3000/{{env}}/changes",
+    "width": 320,
+    "height": 480
+  },
+  {
+    "name": "small_changes_with_fuzz_color_change_not_detected.png",
+    "url": "http://localhost:3000/{{env}}/changes",
+    "width": 480,
+    "height": 320,
+    "fuzz": 20,
+    "exclude": [".border_changes", ".alignment"]
+  },
+  {
+    "name": "small_changes_mobile.png",
+    "url": "http://localhost:3000/{{env}}/changes",
+    "width": 320,
+    "height": 480
+  },
+  {
+    "name": "small_changes_modile_landscape.png",
+    "url": "http://localhost:3000/{{env}}/changes",
+    "width": 480,
+    "height": 320
+  }
+]

@@ -1,0 +1,16 @@
+{
+  "targetEnv": "dev",
+  "baselineEnv": "prod",
+  "maxPhantoms": 4,
+  "imagesDir": "tmp",
+  "reportPath": "index.html",
+  "exportPath": "jux-{{base_env}}-vs-{{sample_env}}-{{date}}.zip",
+  "substitutions": { 
+    "prod": {
+      "env": "prod"
+    },
+    "dev": {
+      "env": "dev"
+    }
+  }
+}
