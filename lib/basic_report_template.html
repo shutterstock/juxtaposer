@@ -17,8 +17,8 @@
         text-align: center;
       }
       .imageBox img {
-        max-width: 500px;
-        max-height: 700px;
+        max-width: 250px;
+        max-height: 250px;
         box-shadow: 0px 0px 15px #aaa ;
       }
 
@@ -36,7 +36,7 @@
         text-decoration: none;
         display: block;
         color: #000;
-        padding: 5px;
+        padding: 3px;
       }
 
       td.key {
@@ -50,7 +50,7 @@
       }
       table.settings td {
         border-top: thin #1693A7 solid;
-        padding: 5px;
+        padding: 3px;
       }
       table.settings {
         border-left: 50px #1693A7 solid;
@@ -80,7 +80,7 @@
 
       h1 {
         margin: 75px 0 0;
-        padding: 15px;
+        padding: 5px;
       }
       h1.failed {
         border-top: 5px #CC0C39 solid;
@@ -94,14 +94,14 @@
       h3.header {
         text-shadow: #000 0px 0px 1px;
         color: #fff;
-        padding: 10px;
+        padding: 5px;
         margin: 50px 0 0;
       }
 
       h3.settings {
         border-top: 5px #1693A7 solid;
         border-left: 52px #1693A7 solid;
-        padding: 10px;
+        padding: 5px;
         margin: 0;
         background-color: #1693A7;
       }
@@ -185,7 +185,7 @@
 
 
   {% for test in tests.success %}
-    <div class="test">
+    <div class="test ">
       <a name="{{test.imageName}}"></a>
       <h1 class="success">{{test.prettyName}}</h1>
       <div class="imageBox">
@@ -196,6 +196,7 @@
       </div>
     </div>
   {% endfor %}
+
 
   {% for test in tests.failed %}
     <div class="test">
