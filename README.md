@@ -11,6 +11,7 @@
 
 Screen shot capture and comparison tool for testing website changes.
 
+
 ## Installation
 
 
@@ -23,6 +24,26 @@ Screen shot capture and comparison tool for testing website changes.
 `npm install --save-dev juxtaposer`
 
 When installed for a single project, the binary is `./node_module/.bin/juxtaposer`
+
+## Example project
+
+
+There is a [sample project in the repo](https://github.com/shutterstock/juxtaposer/tree/master/example). To run the sample app:
+
+* Clone the repo.
+* In the `example` folder, run `npm install`
+* Start the express server: `./bin/www`
+* Run juxtaposer: `./node_modules/.bin/jux`
+
+You should see output very similar to the image below:
+
+![Console Output](https://raw.githubusercontent.com/shutterstock/juxtaposer/master/docs/imgs/sample_command_line_output.png)
+
+If you run `juxtaposer` with the `--report` flag, you will see the html report:
+
+![Html Report](https://raw.githubusercontent.com/shutterstock/juxtaposer/master/docs/imgs/sample_html_report.png)
+
+
 
 
 ## Getting Started
@@ -145,12 +166,6 @@ When you run the command `$ juxtaposer`, it will store the url `http://www.examp
 ]
 ```
 
-
-### custom image capture scripts with jenkins
-
-*TODO*
-
-
 ## Environment translations
 
 The substitution values in the config file are used to build the url. It uses the swig template engine to build the urls.  Example:
@@ -234,17 +249,35 @@ The following information will be passed to the template:
 
 ```
 
-## Composite Image Types
+## Difference Image Types
 
-*TODO provide examples*
 
-### Changes
+### Changes View
 
-### Animated
+The changes pixels overlayed on the dimmed version of the baseline image.
 
-### Composite
+![Console Output](https://raw.githubusercontent.com/shutterstock/juxtaposer/master/docs/imgs/small_changes.changes.png)
 
-### Diff
+### Animated View
+
+A gif that switches between the baseline and the sample image.
+
+![Console Output](https://raw.githubusercontent.com/shutterstock/juxtaposer/master/docs/imgs/small_changes.animated.gif)
+
+
+### Composite View
+
+The negative view of the changed pixels.
+
+![Console Output](https://raw.githubusercontent.com/shutterstock/juxtaposer/master/docs/imgs/small_changes.comp.png)
+
+
+### Diff View
+
+
+Only the changed pixels on a white background.
+
+![Console Output](https://raw.githubusercontent.com/shutterstock/juxtaposer/master/docs/imgs/small_changes.png)
 
 
 ## Targets
