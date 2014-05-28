@@ -1,6 +1,6 @@
 {
   "name": "juxtaposer",
-  "version": "0.0.5",
+  "version": "0.0.7",
   "description": "Screen shot capture and comparison tool for testing website changes.",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -26,6 +26,6 @@
     "swig":         "^1.3.2",
     "archiver":     "^0.9.0",
     "phantomjs":    "^1.9.7",
-    "node-phantom": "^0.2.5"
+    "node-phantom-versioned": "^0.2.5"
   }
 }
