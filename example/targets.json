@@ -29,15 +29,11 @@
   },
   {
     "name": "small_changes.png",
-    "url": "http://localhost:3000/{{env}}/changes",
-    "width": 320,
-    "height": 480
+    "url": "http://localhost:3000/{{env}}/changes"
   },
   {
     "name": "small_changes_with_fuzz_color_change_not_detected.png",
     "url": "http://localhost:3000/{{env}}/changes",
-    "width": 480,
-    "height": 320,
     "fuzz": 20,
     "exclude": [".border_changes", ".alignment"]
   },
