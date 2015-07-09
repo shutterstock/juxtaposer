@@ -50,6 +50,7 @@ If you run `juxtaposer` with the `--report` flag, you will see the html report:
 
 **Step 1** Make a file in the root of your project called `juxtaposer.json` with the contents:
 
+#### juxtaposer.json
 ```json
 {
   "imagesDir": "test_images",
@@ -58,7 +59,7 @@ If you run `juxtaposer` with the `--report` flag, you will see the html report:
       "query": "production"
     },
     "dev": {
-      "query": "development",
+      "query": "development"
     }
   }
 }
@@ -71,7 +72,7 @@ If you run `juxtaposer` with the `--report` flag, you will see the html report:
 [
   {
     "name": "sample_query.png",
-    "url": "https://www.google.com/#q={{query}}",
+    "url": "https://www.google.com/#q={{query}}"
   }
 ]
 ```
@@ -111,7 +112,7 @@ Specify the targets:
 [
   {
     "name": "photo_homepage.png",
-    "url": "http://{{subdomain}}.{{test_env}}example.com/login",
+    "url": "http://{{subdomain}}.{{test_env}}example.com/login"
   }
 ]
 ```
@@ -223,7 +224,7 @@ The following information will be passed to the template:
         "diffsPath":      "diffs/home_page.png",
         "compositeImage": "diffs/home_page.comp.png",
         "changesImage":   "diffs/home_page.changes.png",
-        "animateImage":   "diffs/home_page.animated.gif",
+        "animateImage":   "diffs/home_page.animated.gif"
       },
       {
         //...
@@ -240,7 +241,7 @@ The following information will be passed to the template:
         "imageName":    "google_homepage.png",
         "baselinePath": "baselines/google_homepage.png",
         "samplePath":   "samples/google_homepage.png",
-        "diffsPath":    "diffs/google_homepage.png",
+        "diffsPath":    "diffs/google_homepage.png"
       }
     ]
   }
