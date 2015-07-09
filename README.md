@@ -66,7 +66,6 @@ If you run `juxtaposer` with the `--report` flag, you will see the html report:
 
 **Step 2** Make a file in the root of your project called `targets.json` with the contents:
 
-```json
 #### targets.json
 ```json
 [
