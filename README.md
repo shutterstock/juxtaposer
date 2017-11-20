@@ -528,4 +528,4 @@ Overrides: `exportPath`
 
 ## License
 
-[MIT](LICENSE) © 2014-2017 Shutterstock Images, LLC
+[MIT](LICENSE) © 2014-2017 Shutterstock Images, Inc.
