@@ -1,19 +1,34 @@
+# juxtaposer
+
 [![Code Climate](https://codeclimate.com/github/shutterstock/juxtaposer.png)](https://codeclimate.com/github/shutterstock/juxtaposer)
 [![Dependency Status](https://david-dm.org/shutterstock/juxtaposer.png)](https://david-dm.org/shutterstock/juxtaposer)
 [![devDependency Status](https://david-dm.org/shutterstock/juxtaposer/dev-status.png)](https://david-dm.org/shutterstock/juxtaposer#info=devDependencies)
 [![Stories pending](https://badge.waffle.io/shutterstock/juxtaposer.png?label=pending&title=Stories%20Pending)](https://waffle.io/shutterstock/juxtaposer)
 [![Stories in progress](https://badge.waffle.io/shutterstock/juxtaposer.png?label=in_progress&title=Stories%20In%20Progress)](https://waffle.io/shutterstock/juxtaposer)
 
+> Screen shot capture and comparison tool for testing website changes.
 
-# juxtaposer
+## Table of Contents
 
-## Summary
+- [Install](#install)
+	- [Global Install](#global-install)
+	- [Project Install:](#project-install)
+- [Example project](#example-project)
+- [Getting Started](#getting-started)
+- [Examples](#examples)
+	- [Basic Example](#basic-example)
+	- [advanced example](#advanced-example)
+- [Environment translations](#environment-translations)
+- [Custom report templates](#custom-report-templates)
+- [Difference Image Types](#difference-image-types)
+- [Targets](#targets)
+- [config file settings](#config-file-settings)
+- [command line flags](#command-line-flags)
+- [Flow](#flow)
+- [Contribute](#contribute)
+- [License](#license)
 
-Screen shot capture and comparison tool for testing website changes.
-
-
-## Installation
-
+## Install
 
 ### Global Install
 
@@ -524,8 +539,10 @@ Overrides: `exportPath`
     1. The contents of `imagesDir` will be added to a zip file.
     1. If you want to customize the path, you can specify a path relative to the working dir i.e. `--export-path=../archives/{{data}}.zip`
 
+## Contribute
 
+Please do! Check out [our Contributing guide](CONTRIBUTING.md).
 
 ## License
 
-[MIT](LICENSE) © 2014-2017 Shutterstock Images, LLC
+[MIT](LICENSE) © 2014-2017 Shutterstock Images, Inc.

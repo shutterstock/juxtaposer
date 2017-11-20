@@ -29,5 +29,13 @@
     "advanced-pool": "^0.3.1",
     "semlocks": "^1.1.1",
     "phantom": "^0.7.0"
-  }
+  },
+  "keywords": ["screenshots", "screenshot", "capture", "image-capture", "images", "image"],
+  "homepage": "https://github.com/shutterstock/juxtaposer",
+  "bugs": "https://github.com/shutterstock/juxtaposer/issues",
+  "contributors": [
+    "wusher <wusher@shutterstock.com>",
+    "Richard Littauer <richard.littauer@gmail.com>",
+    "Nadav Dav <nadavik@gmail.com>"
+  ]
 }
